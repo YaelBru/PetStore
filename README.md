@@ -29,6 +29,7 @@ App features include:
      - Clients need to register/login to make a purchase 
      - Payment available to authenticated users only
      - You can register or login - 
+     
      Email        | Password
      ------------ | -------------
      a@a.com      | 1111
