@@ -1,0 +1,23 @@
+<div class="item-container">
+  <div class="item-details">
+    <div class="item-image">
+      <img src="/assets/images/store-items/{{item?.image}}" alt="item-image">
+    </div>
+    <div class="item-info">
+      <div>
+        <h3 class="item-name"> {{ item?.name }} </h3>
+        <p class="item-description"> {{ item?.description }} </p>
+        <span> Price: </span>
+        <span class="item-price">{{ item?.price }} NIS</span>
+      </div>
+      <div class="item-quantity">
+        <button class="btn action" (click)="decrement()"><i class="fas fa-minus"></i></button>
+        <input class="quantity" type="text" [value]="itemQuantity" min="1">
+        <button class="btn action" (click)="increment()"><i class="fas fa-plus"></i></button>
+      </div>
+      <div>
+        <button class="btn btn-action" (click)="addToCart()">ADD TO CART</button>
+      </div>
+    </div>
+  </div>
+</div>

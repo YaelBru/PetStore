@@ -1,0 +1,65 @@
+.sign-up {
+  background: linear-gradient(90deg, #f14437, #ed5b0d);
+  padding: 30px;
+  margin: 20px;
+}
+
+h3 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+label {
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+input {
+  border: 0px solid transparent;
+  border-bottom: 1px solid #dddddd;
+  border-radius: 0;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+input:focus {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+small {
+  color: #ffffff;
+}
+
+.field-error {
+  height: 23px;
+  width: 100%;
+}
+
+.alert-text {
+  color: #efefef;
+  font-size: 0.80rem;
+  font-weight: 600;
+  padding-left: 14px;
+}
+
+.btn-action {
+  color: #ff3500;
+  background-color: #ffffff;
+  transition: .8s;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.btn-action:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}

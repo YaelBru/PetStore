@@ -1,0 +1,16 @@
+<div class="sub-nav">
+  <div class="wrapper">
+    <div class="cart-popover-wrapper">
+      <app-cart-modal></app-cart-modal>
+      <a routerLink="user" routerLinkActive="active" class="btn user"><i class="fas fa-user"></i></a>
+    </div>
+  </div>
+</div>
+<div *ngIf="isLoading$ | async; else mainContent">
+  <app-spinner></app-spinner>
+</div>
+<ng-template #mainContent>
+  <div class="store-routes">
+    <router-outlet></router-outlet>
+  </div>
+</ng-template>

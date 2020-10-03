@@ -1,0 +1,139 @@
+.main-container {
+  max-width: 1235px;
+  padding: 70px;
+  margin: auto;
+  color: #252a34;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 75px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header {
+  background-image: url("../../assets/images/general/bradcam.png");
+  background-size: cover;
+  padding: 160px 0;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 35px auto;
+}
+
+.content.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+h4 {
+  margin: 10px auto;
+  font-weight: 700;
+}
+
+p {
+  color: rgba(112, 112, 112, 0.78);
+  font-size: 17px;
+  line-height: 28px;
+  padding: 10px 40px;
+}
+
+.action {
+  background-color: #ffffff;
+  color: #ff3500;
+  width: 80%;
+  margin: 10px auto;
+  border: 1px solid #ff3500;
+  transition: 0.8s;
+}
+
+.action:hover {
+  color: #ffffff;
+  background-color: #ff3500;
+}
+
+img {
+  width: 455px;
+  height: 366px;
+  transition: 0.8s;
+}
+
+/* Media queries */
+@media all and (max-width: 1112px) {
+  .main-container {
+    width: 80%;
+    padding: 50px;
+  }
+
+  .about-us {
+    flex-direction: column;
+  }
+
+  .content.text {
+    margin: 0 auto 40px;
+    width: 70%;
+    text-align: center;
+  }
+
+  .second {
+    flex-direction: column-reverse;
+  }
+
+  p {
+    padding: 10px;
+  }
+}
+
+@media all and (max-width: 1116px) {
+  .header {
+    padding: 140px 0;
+  }
+}
+
+@media all and (max-width: 920px) {
+  .content.text {
+    width: 100%;
+  }
+
+  p {
+    padding: 20px;
+  }
+}
+
+@media all and (max-width: 760px) {
+  .main-container {
+    width: 100%;
+    padding: 50px 10px;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  img {
+    width: 400px;
+    height: 311px;
+  }
+
+  .header {
+    padding: 100px 0;
+  }
+}

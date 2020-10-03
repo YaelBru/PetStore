@@ -1,0 +1,57 @@
+.sub-nav {
+  background-image: url('../../assets/images/general/bradcam.png');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 190px;
+  padding: 20px;
+}
+
+.wrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: auto;
+}
+
+.cart-popover-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+i {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.store-routes {
+  width: 90%;
+  margin: auto;
+}
+
+
+/* Media queries */
+@media all and (max-width: 800px) {
+  .sub-nav {
+    height: 160px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .sub-nav {
+    height: 130px;
+  }
+
+  i {
+    font-size: 17px;
+  }
+
+  .store-breadcrumb>p {
+    font-size: 14px;
+  }
+
+}

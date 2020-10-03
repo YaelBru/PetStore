@@ -1,0 +1,896 @@
+{
+    "items": [
+        {
+            "name": "Royal Canin Exigent 3kg",
+            "description": "For fussy adult cats from 1 - 7 years old. Savour discerning.",
+            "category": "cats",
+            "subcategory": "food",
+            "brand" : "royal-canin",
+            "price": "159",
+            "image": "savour-exigent-dry.png"
+        },
+        {
+            "name": "Royal Canin Digestive Care 3kg",
+            "description": "Helps support healthy digestion from 1 - 7 years",
+            "category": "cats",
+            "subcategory": "food",
+            "brand" : "royal-canin",
+            "price": "169",
+            "image": "digestive-care.jpg"
+        },
+        {
+            "name": "Royal Canin No 1 Beauty 3kg",
+            "description": "Royal Canin No 1 Beauty for adult cats over 1 years old",
+            "category": "cats",
+            "subcategory": "food",
+            "brand" : "royal-canin",
+            "price": "200",
+            "image": "royal-canin-n1-beauty.png"
+        },
+        {
+            "name": "Royal Canin Hairball Care 3kg",
+            "description": "Helps reduce hairball reduction from 1 - 7 years",
+            "category": "cats",
+            "subcategory": "food",
+            "brand" : "royal-canin",
+            "price": "159",
+            "image": "royal-canin-hairball-care.JPG"
+        },
+        {
+            "name": "Pure Vita Grain Free Chicken & Peas Entrée 3kg",
+            "description": "Combines the delicious taste of chicken with a variety of nutritious fruits and vegetables.",
+            "category": "cats",
+            "subcategory": "food",
+            "brand" : "pure-vita",
+            "price": "159",
+            "image": "pure-vita-grain-free-chicken.jpg"
+        },
+        {
+            "name": "Pure Vita Grain Free Salmon & Peas Entree 3kg",
+            "description": "Combines the delicious taste of salmon with a variety of nutritious fruits and vegetables.",
+            "category": "cats",
+            "subcategory": "food",
+            "brand": "pure-vita",
+            "price": "169",
+            "image": "pure-vita-grain-free-salmon.jpg"
+        },
+        {
+            "name": "Pure Vita Grain Free Duck & Red Lentils Entree 3kg",
+            "description": "Made with Real Duck. Natural formula with added vitamins & minerals. Great taste cat's love",
+            "category": "cats",
+            "subcategory": "food",
+            "brand": "pure-vita",
+            "price": "169",
+            "image": "pure-vita-grain-free-duck.jpg"
+        },
+        {
+            "name": "Happy Cat Junior Sterilised Atlantic Salmon 3kg",
+            "description": "Ideal food for neutered young cats from 6 to 12 months. The fat-reduced recipe is light yet satisfying, providing the perfect base for steady growth.",
+            "category": "cats",
+            "subcategory": "food",
+            "brand": "happy-cat",
+            "price": "159",
+            "image": "happy-cat--junior-sterilised-atlantik-lachs.jpg"
+        },
+        {
+            "name": "Happy Cat Adult Farm Lamb 3kg",
+            "description": "Contains easily digestible lamb and tasty poultry. This delicious recipe is made without fish New Zealand mussels and linseed help strengthen the cat’s joints and boost its immune system.",
+            "category": "cats",
+            "subcategory": "food",
+            "brand": "happy-cat",
+            "price": "159",
+            "image": "happy-cat-weide-lamm.jpg"
+        },
+        {
+            "name": "Healthy Bites Breath & Dental 29 servings - 65g",
+            "description": "Helps prevent formation of plaque, beneficial for skin and coat (1% Omega-3 and 2% Omega-6 fatty acids). Added Vitamins & minerals. Suitable for sterilized cats.",
+            "category": "cats",
+            "subcategory": "treats",
+            "brand": "healthy-bites",
+            "price": "20",
+            "image": "healthy-bites-dental.jpg"
+        },
+        {
+            "name": "Healthy Bites Nutri Booster For Kittens 27 servings - 65g",
+            "description": "Packed full of vitamins, minerals & amino acids, with Antioxidants to help support immune system. Enriched with omega-3 fatty acids for healthy skin & coat and high meat content.",
+            "category": "cats",
+            "subcategory": "treats",
+            "brand": "healthy-bites",
+            "price": "20",
+            "image": "healthy-bites-nutri.jpg"
+        },
+        {
+            "name": "Healthy Bites Hairball Remedy For Cats and Kittens 29 servings - 65g",
+            "description": "Helps to prevent and remove hairballs. Contains Inulin to help support a healthy digestive system. Source of Omega 3 & 6 fatty acids. High in chicken. Suitable for weight management and sterilised cats.",
+            "category": "cats",
+            "subcategory": "treats",
+            "brand": "healthy-bites",
+            "price": "20",
+            "image": "healthy-bites-hairball.jpg"
+        },
+        {
+            "name": "Rosewood Natural Nosh Duck Fillet Mini Strip Cat Treats 50g",
+            "description": "Made with 100% natural Duck Breast Meat. They are also gluten free, have no added salt, are low in fat and come in a resealable pouch pack.",
+            "category": "cats",
+            "subcategory": "treats",
+            "brand": "rosewood",
+            "price": "12",
+            "image": "rosewood-natural-nosh-duck.jpg"
+        },
+        {
+            "name": "Rosewood Natural Nosh Chicken Fillet Mini Strip Cat Treats 50g",
+            "description": "Made with 100% natural Chicken Breast Meat. They are also gluten free, have no added salt, are low in fat and come in a resealable pouch pack.",
+            "category": "cats",
+            "subcategory": "treats",
+            "brand": "rosewood",
+            "price": "12",
+            "image": "rosewood-natural-nosh-chicken.jpg"
+        },
+        {
+            "name": "Rosewood Natural Eats Salmon Fillet Mini Strips Cat Treats 50g",
+            "description": "Made with 100% natural Salmon. They are also gluten free, have no added salt, are low in fat and come in a resealable pouch pack.",
+            "category": "cats",
+            "subcategory": "treats",
+            "brand": "rosewood",
+            "price": "12",
+            "image": "rosewood-natural-eats-salmon.jpg"
+        },
+        {
+            "name": "Kit Cat Purr Puree Chicken & Salmon - 4 x 15g pack",
+            "description": "Contains a smooth blend of chicken or tuna. with no added colours or preservatives and is perfect for cats of all life stages. Grain-Free, delicious and 100% Natural.",
+            "category": "cats",
+            "subcategory": "treats",
+            "brand": "kit-cat",
+            "price": "19",
+            "image": "kit-cat-purr-puree-chicken-salmon.jpg"
+        },
+        {
+            "name": "Kit Cat Purr Puree Plus+ Urinary Care - 4 x 15g pack",
+            "description": "Contains a smooth blend of tuna/chicken and fish oil recipe is perfect for cats of all life stages. Grain-Free, delicious and 100% Natural .",
+            "category": "cats",
+            "subcategory": "treats",
+            "brand": "kit-cat",
+            "price": "19",
+            "image": "kit-cat-purr-puree-plus.png"
+        },
+        {
+            "name": "Kit Cat Purr Puree Tuna & Salmon - 4 x 15g pack",
+            "description": "Contains a smooth blend of chicken or tuna. with no added colours or preservatives and is perfect for cats of all life stages. Grain-Free, delicious and 100% Natural.",
+            "category": "cats",
+            "subcategory": "treats",
+            "brand": "kit-cat",
+            "price": "19",
+            "image": "kit-cat-purr-puree-tuna-salmon.png"
+        },
+        {
+            "name": "Whisker City® Spring Toys Cat Toys - 4 Pack",
+            "description": "",
+            "category": "cats",
+            "subcategory": "toys",
+            "brand": "whisker-city",
+            "price": "12",
+            "image": "whisker-city-spring-toys-cat-toys.jfif"
+        },
+        {
+            "name": "Petlinks® Mystery Motion™ Concealed Electronic Motion Cat Toy",
+            "description": "",
+            "category": "cats",
+            "subcategory": "toys",
+            "brand": "petlinks",
+            "price": "60",
+            "image": "petlinks-concealed-electronic-motion-cat-toy.jfif"
+        },
+        {
+            "name": "Whisker City® Ribbon Teaser Cat Toy",
+            "description": "",
+            "category": "cats",
+            "subcategory": "toys",
+            "brand": "whisker-city",
+            "price": "20",
+            "image": "whisker-city-ribbon-teaser-cat-toy.jfif"
+        },
+        {
+            "name": "Whisker City® Tinsel Balls Cat Toys - 4 Pack (COLOR VARIES)",
+            "description": "",
+            "category": "cats",
+            "subcategory": "toys",
+            "brand": "whisker-city",
+            "price": "12",
+            "image": "whisker-city-tinsel-balls.jfif"
+        },
+        {
+            "name": "Whisker City® Pop-Up Tri-Tunnel Cat Toy",
+            "description": "",
+            "category": "cats",
+            "subcategory": "toys",
+            "brand": "whisker-city",
+            "price": "60",
+            "image": "whisker-city-pop-up-tri-tunnel.jfif"
+        },
+        {
+            "name": "Merry & Bright™ Holiday Stocking Cat Toys - 24 Pack",
+            "description": "",
+            "category": "cats",
+            "subcategory": "toys",
+            "brand": "merry-and-bright",
+            "price": "50",
+            "image": "merry-and-brightandtrade-holiday-stocking.jfif"
+        },
+        {
+            "name": "Petstages® Kitty Cuddle Pal Cat Toy",
+            "description": "",
+            "category": "cats",
+            "subcategory": "toys",
+            "brand": "petstages",
+            "price": "23",
+            "image": "petstages-kitty-cuddle-pal.jfif"
+        },
+        {
+            "name": "Whisker City® Sparkle Fish & Feathers Cat Toys - 2 Pack",
+            "description": "",
+            "category": "cats",
+            "subcategory": "toys",
+            "brand": "whisker-city",
+            "price": "10",
+            "image": "whisker-city-sparkle-fish-and-feathers.jfif"
+        },
+        {
+            "name": "Petstages® Plaque Away Catnip Pretzel Cat Toy",
+            "description": "",
+            "category": "cats",
+            "subcategory": "toys",
+            "brand": "petstages",
+            "price": "12",
+            "image": "petstages-plaque-away-catnip-pretzel.jfif"
+        },
+        {
+            "name": "ExquisiCat® Naturals Paper Cat Litter - Natural, Fragrance Free 11kg",
+            "description": "Keep your kitty happy with this ExquisiCat Naturals Paper Litter, which features a nonallergenic formula for safe use. Natural odor control, as well as baking soda and zeolite, helps eliminate unwanted scents to keep your home smelling clean and fresh, and a 99% dust-free formula minimizes tracking.",
+            "category": "cats",
+            "subcategory": "litter",
+            "brand": "exquisiCat",
+            "price": 100,
+            "image": "exquisicat-naturals-paper-cat-litter.jfif"
+        },
+        {
+            "name": "Nature's Miracle® Disposable Cat Litter Box",
+            "description": "Made from breathable material that enhances airflow through the litter pan reducing moisture that contributes to odor build up keeping your litter dryer and fresher longer. This durable pan will not leak or shred like plastic liners and provides an easy clean up that is safe on landfills.",
+            "category": "cats",
+            "subcategory": "litter",
+            "brand": "Nature's Miracle",
+            "price": 40,
+            "image": "Natures-Miracle-Disposable-Litter.jpg"
+        },
+        {
+            "name": "Nature's Miracle® Advanced Hooded Cat Litter Box",
+            "description": "Made with advanced plastic technology for outstanding odor control. Odor blocking plastic material guards against the growth of odor caused by bacteria and prevents odors from being absorbed into plastic.",
+            "category": "cats",
+            "subcategory": "litter",
+            "brand": "Nature's Miracle",
+            "price": 100,
+            "image": "natures-miracle-advanced-hooded-cat-litter-box.jfif"
+        },
+        {
+            "name": "Petmate® Scoop'n Hide Cat Litter Scoop",
+            "description": "",
+            "category": "cats",
+            "subcategory": "litter",
+            "brand": "petmate",
+            "price": "20",
+            "image": "petmate-scoop-n-hide-cat-litter-scoop.jfif"
+        },
+        {
+            "name": "PetSafe® ScoopFree® Self Cleaning Cat Litter Box",
+            "description": "Provides weeks of fresh, clean litter whenever your cat needs it. Less time spent maintaining your cat's litter box means you can enjoy more quality moments with your cat and live happy together!",
+            "category": "cats",
+            "subcategory": "litter",
+            "brand": "petSafe",
+            "price": "400",
+            "image": "petsafe-scoopfree-self-cleaning-cat-litter-box.jfif"
+        },
+        {
+            "name": "Purina Tidy Cats Breeze Cat Litter Pellets Refill",
+            "description": "Designed to work with the Tidy Cats BREEZE litter system (sold separately), these litter pellets allow urine to pass through, leaving solid waste on top. This makes scooping your BREEZE litter system quick and easy. These pellets are 99.9 percent dust free.",
+            "category": "cats",
+            "subcategory": "litter",
+            "brand": "purina",
+            "price": 60,
+            "image": "purina-tidy-cats-breeze-cat-litter.jfif"
+        },
+        {
+            "name": "Dr. Elsey's Precious Cat Ultra Cat Litter - Unscented & Clumping",
+            "description": "An excellent clumping litter that prevents moisture from reaching the bottom of the litter box, while providing a clump that will not break apart. Ultra is perfect for multi-cat families and cat owners with sifting or mechanical litter boxes and it controls odor naturally without perfume, deodorants or chemicals.",
+            "category": "cats",
+            "subcategory": "litter",
+            "brand": "dr-elseys",
+            "price": 80,
+            "image": "dr.-elseys-precious-cat-ultra-cat-litter.jfif"
+        },
+        {
+            "name": "Ever Clean Extra Strength Cat Litter, Unscented",
+            "description": "Made from a premium blend of natural minerals and clays. We select only pure, high-quality ingredients. Cats like Ever Clean Premium Cat Litter because it is made from natural clay and is 99.9% dust-free.",
+            "category": "cats",
+            "subcategory": "litter",
+            "brand": "ever-clean",
+            "price": "130",
+            "image": "Ever-Clean-Strength-Unscented.jpg"
+        },
+        {
+            "name": "Ever Clean Extreme Clump, Clumping Cat Litter, Scented",
+            "description": "Mmakes smelly litter boxes a thing of the past. This strong clumping cat litter grabs and eliminates odor with its activated carbon bonded to and mixed within the litter granules. Contains an antimicrobial agent that inhibits the growth of bacterial odors on the litter, and its light scent is pleasant to the nose.",
+            "category": "cats",
+            "subcategory": "litter",
+            "brand": "ever-clean",
+            "price": 130,
+            "image": "Ever-Clean-Extreme-Clumping-Scented.jpg"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "food",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Giant Puppy 3kg",
+            "description": "For giant dogs. Adult weight from 45 kg and over. From 2 to 8 months old.",
+            "category": "dogs",
+            "subcategory": "food",
+            "brand": "royal-canin",
+            "price": "259",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Mini puppy 3kg",
+            "description": "For small dogs. Adult weight up to 10 kg. From 2 to 10 months old.",
+            "category": "dogs",
+            "subcategory": "food",
+            "brand": "royal-canin",
+            "price": "159",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Adult 3kg",
+            "description": "Royal Canin Labrador Retriever Adult dry dog food, from 15 months old.",
+            "category": "dogs",
+            "subcategory": "food",
+            "brand": "royal-canin",
+            "price": "169",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Maxi Joint Care 3kg",
+            "description": "For adult dogs to support joint health From 26 to 44 kg.",
+            "category": "dogs",
+            "subcategory": "food",
+            "brand": "royal-canin",
+            "price": "179",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Pure Vita Salmon & Peas Entrée Grain Free Formula 3kg",
+            "description": "Combines tasty salmon with wholesome sweet potatoes and a select variety of berries, fruits and vegetables to deliver a healthy and delicious, easy to digest meal your dog will love.",
+            "category": "dogs",
+            "subcategory": "food",
+            "brand": "pure-vita",
+            "price": "189",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Pure Vita Turkey & Sweet Potato Entrée Grain Free 3kg",
+            "description": "Combines tasty turkey with wholesome sweet potatoes and peas as well as a select variety of fruits to deliver a healthy and delicious, easy to digest meal your dog will love.",
+            "category": "dogs",
+            "subcategory": "food",
+            "brand": "pure-vita",
+            "price": "159",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Pure Vita Duck & Green Lentils Grain Free Entree 3kg",
+            "description": "Combines tasty duck with wholesome green lentils as well as a select variety of fruits to deliver a healthy and delicious, easy to digest meal your dog will love.",
+            "category": "dogs",
+            "subcategory": "food",
+            "brand": "pure-vita",
+            "price": "239",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Happy Dog Supreme Fit&Well - Maxi Adult 3kg",
+            "description": "Made from natural ingredients and supplemented with original New Zealand mussels is perfect for all adult dogs over 26 kg.",
+            "category": "dogs",
+            "subcategory": "food",
+            "brand": "happy-dog",
+            "price": "220",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "treats",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "treats",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "treats",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "treats",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "treats",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "treats",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "treats",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "treats",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "treats",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "toys",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "toys",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "toys",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "toys",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "toys",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "toys",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "toys",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "toys",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "dogs",
+            "subcategory": "toys",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        }, 
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "fish",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "fish",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "fish",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "fish",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "fish",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "fish",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "fish",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "fish",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "fish",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif" 
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "birds",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "birds",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "birds",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "birds",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "birds",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "birds",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "birds",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "birds",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "birds",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif" 
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "small-pets",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "small-pets",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "small-pets",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "small-pets",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "small-pets",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "small-pets",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "small-pets",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "small-pets",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "other-animals",
+            "subcategory": "small-pets",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif" 
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "supplies",
+            "subcategory": "",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "supplies",
+            "subcategory": "",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "supplies",
+            "subcategory": "",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "supplies",
+            "subcategory": "",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "supplies",
+            "subcategory": "",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "supplies",
+            "subcategory": "",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "supplies",
+            "subcategory": "",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "supplies",
+            "subcategory": "",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif"
+        },
+        {
+            "name": "Royal Canin Labrador Retriever Puppy 3kg",
+            "description": "Royal Canin Labrador Retriever Puppy dry dog food, from 2 - 15 months old.",
+            "category": "supplies",
+            "subcategory": "",
+            "brand": "royal-canin",
+            "price": "229",
+            "image": "dog-food.jfif" 
+        }
+
+    ]
+}

@@ -1,0 +1,73 @@
+<div class="user-container">
+  <div *ngIf="isLoading$ | async; else mainContainer">
+    <app-spinner></app-spinner>
+  </div>
+  <ng-template #mainContainer>
+    <div class="wrapper">
+      <div class="user-info">
+        <div class="info">
+          <h2><i class="fas fa-address-card"></i> Hi {{ (user$ | async)?.fullName}} </h2>
+          <span>{{ (user$ | async)?.email }}</span>
+        </div>
+        <div>
+          <button class="btn btn-outline-danger" (click)="logOut()"><i class="fas fa-sign-out-alt"></i></button>
+        </div>
+      </div>
+      <div class="user-orders">
+        <div class="no-orders" *ngIf="!(user$ | async)?.orders?.length">
+          <h4>No Orders Yet</h4>
+          <img src="../../../assets/images/general/cat-icon-sad.jpg" alt="">
+        </div>
+        <div *ngIf="(user$ | async)?.orders?.length">
+          <h3>Your Orders:</h3>
+          <ngb-accordion #acc="ngbAccordion">
+            <ngb-panel id="toggle-{{i}}" *ngFor="let order of (user$ | async)?.orders; let i = index">
+              <ng-template ngbPanelTitle>
+                <span class="panel-title"><i class="fas fa-box"></i> Order No. </span>
+                <span class="panel-value">{{ order?._id}}</span>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                <div>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th scope="col" colspan="2">Product</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let orderItem of order.orderItems">
+                        <td scope="col" colspan="2">
+                          <img src="../../../../assets/images/store-items/{{orderItem.selectedItem.image}}">
+                          <span>{{ orderItem.selectedItem.name }}</span>
+                        </td>
+                        <td scope="col"> <span>X {{ orderItem.itemQuantity }}</span></td>
+                        <td scope="col">
+                          <p>{{ orderItem.itemTotalPrice }} NIS</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td scope="col" colspan="2">
+                          <span>Ordered: {{ order?.date | date: 'medium' }}</span>
+                        </td>
+                        <td scope="col">
+                          <span>{{ order?.itemsTotalQuantity }} Items</span>
+                        </td>
+                        <td scope="col">
+                          <p>{{ order?.itemsTotalPrice }} NIS</p>
+                        </td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </ng-template>
+            </ngb-panel>
+          </ngb-accordion>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</div>

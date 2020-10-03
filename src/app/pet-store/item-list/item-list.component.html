@@ -1,0 +1,58 @@
+<div class="store-features">
+  <app-search></app-search>
+  <div ngbDropdown class="feature categories-sidebar">
+    <div class="categories-title" ngbDropdownToggle>
+      <span>Categories</span>
+    </div>
+    <div class="nav-wrapper" ngbDropdownMenu>
+      <nav class="navbar">
+        <ul class="main-nav">
+          <li class="nav-item main-option">
+            <a class="nav-link main-option-link" type="button" (click)="getAllItems()">All Items</a>
+          </li>
+          <li class="nav-item main-option" *ngFor="let category of categories">
+            <a class="nav-link main-option-link" type="button"
+              (click)="getItemsByCategory('category', category.category, category.subcategory)">{{ category.category | changeFormat | titlecase }}
+            </a>
+            <ul class="options">
+              <li class="option" *ngFor="let subcategory of category.subcategories" (click)="getItemsByCategory('category', category.category,
+            subcategory)"><a class="nav-link option-link"
+                  type="button">{{ subcategory | changeFormat | titlecase }}</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item main-option">
+            <a class="nav-link main-option-link">Brands</a>
+            <ul class="options">
+              <li class="option" *ngFor="let brand of brands" (click)="getItemsByBrandName('brand', brand)"><a
+                  class="nav-link option-link" type="button">{{ brand | changeFormat | titlecase }}</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<div class="items-wrapper" *ngIf="!errorMessage">
+  <div class="item"
+    *ngFor="let selectedItem of petStoreItems | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+    <a routerLink="./items/{{ selectedItem._id }}">
+      <div class="item-content">
+        <div class="img-container">
+          <img class="img-item" src="../../../assets/images/store-items/{{selectedItem.image}}"
+            alt="{{selectedItem.name}}">
+        </div>
+        <p class="item-name">{{ selectedItem.name }}</p>
+        <p class="item-price">{{ selectedItem.price }} NIS</p>
+      </div>
+    </a>
+  </div>
+  <ngb-pagination class="pagination" [collectionSize]="petStoreItems?.length" [pageSize]="pageSize" [(page)]="page"
+    size="sm">
+  </ngb-pagination>
+</div>
+<div class="error" *ngIf="errorMessage">
+  <h2>{{ errorMessage }}</h2>
+  <img class="error-img" src="../../../assets/images/general/cat-icon-confused.jpg"
+    alt="Search error - confused cat image">
+</div>

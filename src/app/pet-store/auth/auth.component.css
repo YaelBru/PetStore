@@ -1,0 +1,24 @@
+.auth-forms-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: top;
+  margin: 50px auto;
+  width: 80%;
+}
+
+app-login,
+app-register {
+  width: 50%;
+}
+
+@media all and (max-width: 1000px) {
+  .auth-forms-container {
+    flex-direction: column;
+  }
+
+  app-login,
+  app-register {
+    width: 100%;
+  }
+}

@@ -1,0 +1,59 @@
+<div class="shopping-cart-container">
+  <div class="shopping-cart">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="col" style="text-align: left;">Product</th>
+          <th scope="col" colspan="1">Price</th>
+          <th scope="col" colspan="1">Quantity</th>
+          <th scope="col" colspan="1">Total</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody *ngIf="!(shoppingCartItems$ | async)?.length">
+        <tr>
+          <td colspan="4">
+            <div class="no-items">
+              <h4>Your Cart is Empty</h4>
+              <img class="no-items-img" src="../../../assets/images/general/cat-icon-sad.jpg" alt="">
+            </div>
+          </td>
+        </tr>
+      </tbody>
+      <tbody *ngIf="(shoppingCartItems$ | async)?.length">
+        <tr *ngFor="let shoppingCartItem of shoppingCartItems$ | async">
+          <td scope="col" colspan="2" style="text-align: left; display: flex; align-items: center;">
+            <img class="item-img" src="../../../assets/images/store-items/{{shoppingCartItem.selectedItem.image}}">
+            <p>{{ shoppingCartItem.selectedItem.name }}</p>
+          </td>
+          <td scope="col" colspan="1">
+            <p>{{ shoppingCartItem.selectedItem.price }} NIS</p>
+          </td>
+          <td scope="col" colspan="1">
+            <div class="item-quantity">
+              <input type="text" value="{{shoppingCartItem.itemQuantity}}" min="0" max="10">
+              <div class="action-container">
+                <button class="btn action"
+                  (click)="updateItemQuantity('increment', shoppingCartItem.selectedItem._id)">+</button>
+                <button class="btn action"
+                  (click)="updateItemQuantity('decrement', shoppingCartItem.selectedItem._id)">-</button>
+              </div>
+            </div>
+          </td>
+          <td scope="col" colspan="1">
+            <p>{{ shoppingCartItem.itemTotalPrice}} NIS</p>
+          </td>
+          <td>
+            <button class="btn btn-remove" (click)="removeItem(shoppingCartItem._id)">X</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="to-checkout">
+    <h4>Total Items: {{ totalQuantity$ | async }}</h4>
+    <h4>Subtotal: {{ totalPrice$ | async }} NIS</h4>
+    <button class="btn btn-light btn-action" [disabled]="!(shoppingCartItems$ | async)?.length" routerLink="../checkout">Proceed to
+      Checkout</button>
+  </div>
+</div>

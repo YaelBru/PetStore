@@ -1,0 +1,75 @@
+<div class="wrapper">
+  <div class="banner">
+    <div class="title">
+      <h3>Welcome to Our
+        <br>
+        <span>Pet Store!</span>
+      </h3>
+    </div>
+    <div class="header-img-wrapper">
+      <img class="header-img" src="../../assets/images/general/dog.png" alt="Dog Image">
+    </div>
+  </div>
+  <div class="features">
+    <div class="feature-wrapper">
+      <div class="feature">
+        <a routerLink="store">
+          <i class="fas fa-check-circle fa-4x font-awesome"></i>
+          <div class="feature-content">
+            <h3>Our Store</h3>
+            <p>With your help we can continue to help and save stray animals...</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="feature-wrapper">
+      <div class="feature">
+        <a routerLink="adopt">
+          <i class="fas fa-heart fa-4x font-awesome"></i>
+          <div class="feature-content">
+            <h3>Adopt</h3>
+            <p>We have tons of cats and dogs waiting for their forever home!</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="feature-wrapper">
+      <div class="feature">
+        <a routerLink="contact">
+          <i class="fas fa-bullseye fa-4x font-awesome"></i>
+          <div class="feature-content">
+            <h3>Volunteer</h3>
+            <p>Come and join us in our journey! Contact us for more info.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="sub-header">
+    <div class="pet-img">
+      <img src="../../assets/images/general/pet_care.png" alt="Cat image">
+    </div>
+    <h3>We're Waiting For you!</h3>
+  </div>
+  <div class="home-carousel">
+    <div class="icon-container">
+      <i class="fas fa-paw paw-icon side"></i>
+      <i class="fas fa-paw paw-icon"></i>
+      <i class="fas fa-paw paw-icon side"></i>
+    </div>
+    <h2>HAPPY CUSTOMERS</h2>
+    <ngb-carousel [showNavigationArrows]="showNavigationArrows" [pauseOnHover]="pauseOnHover"
+      [showNavigationIndicators]="showNavigationIndicators" interval="4000">
+      <ng-template ngbSlide *ngFor="let testimony of testimonies">
+        <div class="slide">
+          <div class="testimony">
+            <blockquote>
+              <p class="testimony-content">"{{ testimony.content }}"</p>
+              <h5>{{ testimony.name }}</h5>
+            </blockquote>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+</div>

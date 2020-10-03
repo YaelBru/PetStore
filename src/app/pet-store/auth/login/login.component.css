@@ -1,0 +1,53 @@
+.login {
+  padding: 30px;
+  margin: 20px;
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 700;
+  margin-bottom: 21px;
+}
+
+label {
+  color: #767676;
+  letter-spacing: 2px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+input {
+  border: 0px solid transparent;
+  border-bottom: 1px solid #dddddd;
+  border-radius: 0;
+  background: #fff;
+}
+
+.field-error {
+  height: 23px;
+  width: 100%;
+}
+
+.alert-text {
+  color: #dc3545;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 14px;
+}
+
+.btn-action {
+  background-color: #ffffff;
+  color: #ff3500;
+  width: 100%;
+  margin: 10px auto;
+  border: 1px solid #ff3500;
+  transition: 0.8s;
+}
+
+.btn-action:hover {
+  color: #ffffff;
+  background-color: #ff3500;
+}

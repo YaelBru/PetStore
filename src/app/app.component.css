@@ -1,0 +1,25 @@
+:host {
+  display: grid;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "main main main main"
+    "footer footer footer footer";
+  min-height: 100%;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
+app-navbar {
+  grid-area: navbar;
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+}
+
+main {
+  grid-area: main;
+}
+
+app-footer {
+  grid-area: footer;
+}

@@ -1,0 +1,41 @@
+<ng-template #longContent let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Your Shopping Cart</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div *ngIf="(shoppingCartItems$ | async)?.length">
+      <ul class="shopping-cart-items" *ngFor="let shoppingCartItem of shoppingCartItems$ | async">
+        <li class="shopping-cart-item">
+          <div>
+            <img src="../../../assets/images/store-items/{{shoppingCartItem.selectedItem.image}}">
+          </div>
+          <div>
+            <p>{{ shoppingCartItem.selectedItem.name}}</p>
+            <div>
+              <span class="info">Quantity: {{shoppingCartItem.itemQuantity}}</span>
+              <span class="info">Price: {{ shoppingCartItem.selectedItem.price}} NIS</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="!(shoppingCartItems$ | async)?.length">
+      <div class="no-items" *ngIf="!(user$ | async)?.orders?.length">
+        <h5>Your Cart is Empty</h5>
+        <img src="../../../assets/images/general/cat-icon-sad.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-action" routerLink="./shopping-cart" (click)="modal.close('Close click')">Edit Cart</button>
+    <button class="btn btn-action" routerLink="checkout" [disabled]="!(shoppingCartItems$ | async)?.length"
+      (click)="modal.close('Close click')">Buy Items</button>
+  </div>
+</ng-template>
+
+<button class="btn" (click)="openScrollableContent(longContent)">
+  <i class="fas fa-shopping-cart"><span class="badge badge-pill custom-badge">{{ totalQuantity$ | async }}</span></i>
+</button>

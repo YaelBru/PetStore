@@ -1,0 +1,143 @@
+.checkout-container {
+  margin: 20px auto;
+  width: 80%;
+}
+
+h2 {
+  font-size: 27px;
+  font-weight: 600;
+  width: 86%;
+  margin: 20px auto 20px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.billing,
+.payment-details {
+  width: 50%;
+  padding: 20px;
+}
+
+label::after {
+  content: " *";
+  color: tomato;
+}
+
+.non-required::after {
+  content: none;
+}
+
+.form-control {
+  border: 1px solid #e5e6e9;
+  border-radius: 0px;
+  height: 40px;
+  padding-left: 18px;
+  font-size: 13px;
+  background: transparent;
+}
+
+textarea {
+  height: 100% !important;
+}
+
+small {
+  color: rgba(0,0,0,.5);
+  padding-left: 20px;
+}
+
+.field-error {
+  height: 23px;
+  width: 100%;
+}
+
+.alert-text {
+  color: #dc3545;
+  font-size: 0.80rem;
+  font-weight: 600;
+  padding-left: 14px;
+}
+
+.order-summary {
+  background-color: #f4f4f4;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  border-bottom: 1px solid #dddddd;
+  font-size: 18px;
+  font-weight: 500;
+  color: #2a2a2a;
+  padding-bottom: 15px;
+}
+
+table {
+  width: 100%
+}
+
+td {
+  color: #777777;
+}
+
+th {
+
+  font-weight: normal;
+  border-bottom: 1px solid #eeeeee;
+  line-height: 42px;
+}
+
+tfoot td {
+  color: #2a2a2a;
+  font-weight: 500;
+}
+
+.btn-send {
+  display: block;
+  background-color: #ffffff;
+  color: #ff3500;
+  width: 40%;
+  margin: 30px auto 0;
+  border: 1px solid #ff3500;
+  transition: 0.8s;
+}
+
+.btn-send:hover {
+  color: #ffffff;
+  background-color: #ff3500;
+}
+
+
+/* Media Queries */
+@media all and (max-width: 1000px) {
+  .checkout-container {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 900px) {
+  form {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .billing,
+  .payment-details {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  form,
+  .order-summary {
+    font-size: 14px;
+  }
+
+  .btn-send {
+    width: 90%;
+  }
+}

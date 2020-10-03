@@ -1,0 +1,73 @@
+<div *ngIf="(inProcess$ | async); else mainContent">
+  <app-spinner></app-spinner>
+</div>
+<ng-template #mainContent class="container">
+  <div class="modal-header">
+    <h3>Thank you. Your order has been received.</h3>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="order-info">
+      <h4>Order Info</h4>
+      <div class="wrapper">
+        <div class="info">
+          <p class="detail-title">Order Number</p>
+          <span class="detail">{{ (orderDetails$ | async)?._id }}</span>
+        </div>
+        <div div class="info">
+          <p class="detail-title">Date</p>
+          <span class="detail">{{ (orderDetails$ | async)?.date | date : 'medium' }}</span>
+        </div>
+        <div div class="info">
+          <p class="detail-title">Total Price</p>
+          <span class="detail">{{ (orderDetails$ | async)?.itemsTotalPrice }} NIS</span>
+        </div>
+        <div div class="info">
+          <p class="detail-title">Shipping Address</p>
+          <span class="detail">{{ (orderDetails$ | async)?.shippingAddress }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="order-receipt">
+      <h4>Order Receipt</h4>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col" colspan="2">Product</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let orderItem of (orderDetails$ | async)?.orderItems">
+            <td scope="col" colspan="2">
+              <img src="../../../assets/images/store-items/{{orderItem?.selectedItem.image}}">
+              <span>{{ orderItem?.selectedItem.name }}</span>
+            </td>
+            <td scope="col"> <span>X {{ orderItem?.itemQuantity }}</span></td>
+            <td scope="col">
+              <p>{{ orderItem?.itemTotalPrice }} NIS</p>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td scope="col" colspan="2">
+            </td>
+            <td scope="col">
+              <span>{{ (orderDetails$ | async)?.itemsTotalQuantity }} Items</span>
+            </td>
+            <td scope="col">
+              <p>{{ (orderDetails$ | async)?.itemsTotalPrice }} NIS</p>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+  </div>
+</ng-template>

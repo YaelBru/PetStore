@@ -1,0 +1,24 @@
+<div class="header">
+  <h3>Adopt</h3>
+</div>
+<app-spinner *ngIf="isLoading$ | async; else mainContent"></app-spinner>
+<ng-template class="main-container" #mainContent>
+  <div class="content">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. For more information and more options for adoption:
+    </p>
+    <div>
+      <a class="btn btn-action" routerLink="/contact">Contact Us</a>
+    </div>
+  </div>
+  <div class="for-adoption">
+    <div class="card main" *ngFor="let animal of adoptionList$ | async">
+      <img src="../../assets/images/for-adoption/{{animal.image}}" class="card-img-top"
+        alt="{{animal.category}} for adoption image">
+      <div class="card-body content">
+        <h4>{{ animal.name }}, {{ animal.age }}</h4>
+      </div>
+    </div>
+  </div>
+</ng-template>

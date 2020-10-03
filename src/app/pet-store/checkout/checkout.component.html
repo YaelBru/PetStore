@@ -1,0 +1,170 @@
+<div class="checkout-container">
+  <div class="checkout-wrapper">
+    <form [formGroup]="checkoutForm" id="checkout-form" (ngSubmit)="submitPayment()">
+      <div class="billing">
+        <h2>Billing Details</h2>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" class="form-control" id="name" formControlName="fullName">
+          <div class="field-error">
+            <span *ngIf="checkoutForm.controls['fullName'].invalid && (checkoutForm.controls['fullName'].dirty ||
+              checkoutForm.controls['fullName'].touched)">
+              <span class="alert-text" *ngIf="checkoutForm.controls['fullName'].errors.required">Name Required</span>
+            </span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="mobile">Phone Number</label>
+          <input type="tel" class="form-control" id="mobile" formControlName="mobile">
+          <div class="field-error">
+            <span
+              *ngIf="checkoutForm.controls['mobile'].invalid && (checkoutForm.controls['mobile'].dirty || checkoutForm.controls['mobile'].touched)">
+              <span class="alert-text" *ngIf="checkoutForm.controls['mobile'].errors.required">Phone Number
+                Required</span>
+              <span class="alert-text" *ngIf="checkoutForm.controls['mobile'].errors.pattern">Must Contain Numbers
+                Only</span>
+            </span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" formControlName="email">
+          <div class="field-error">
+            <span
+              *ngIf="checkoutForm.controls['email'].invalid && (checkoutForm.controls['email'].dirty || checkoutForm.controls['email'].touched)">
+              <span class="alert-text" *ngIf="checkoutForm.controls['email'].errors.required">Email Required</span>
+              <span class="alert-text" *ngIf="checkoutForm.controls['email'].errors.email">Invalid Email</span>
+            </span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="shipping-address">Shipping Address</label>
+          <input type="text" class="form-control" id="shipping-address" formControlName="shippingAddress">
+          <div class="field-error">
+            <span *ngIf="checkoutForm.controls['shippingAddress'].invalid &&
+                       (checkoutForm.controls['shippingAddress'].dirty ||
+                       checkoutForm.controls['shippingAddress'].touched)">
+              <span class="alert-text" *ngIf="checkoutForm.controls['shippingAddress'].errors.required">Shipping Address
+                Required</span>
+            </span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="non-required" for="order-notes">Order Notes</label>
+          <textarea name="message" id="order-notes" class="form-control" formControlName="orderNotes" rows="7"
+            maxlength="300" placeholder="Up to 300 characters"></textarea>
+        </div>
+      </div>
+      <div class="payment-details">
+        <h2>Payment Details</h2>
+        <div class="form-group" formGroupName="payment">
+          <div class="form-group">
+            <label for="credit-card">Credit Card Number</label>
+            <input type="text" class="form-control" id="credit-card" formControlName="creditCard">
+            <div class="field-error">
+              <span
+                *ngIf="checkoutForm.get('payment')['controls'].creditCard.invalid && (checkoutForm.get('payment')['controls'].creditCard.dirty || checkoutForm.get('payment')['controls'].creditCard.touched)">
+                <span class="alert-text"
+                  *ngIf="checkoutForm.get('payment')['controls'].creditCard.errors.required">Credit Card Number
+                  Required</span>
+                <span class="alert-text"
+                  *ngIf="checkoutForm.get('payment')['controls'].creditCard.errors.pattern">Must Contain
+                  Numbers
+                  Only</span>
+              </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="credit-card-name">Credit Card Name</label>
+            <input type="text" class="form-control" id="credit-card-name" formControlName="creditCardName">
+            <div class="field-error">
+              <span *ngIf="checkoutForm.get('payment')['controls'].creditCardName.invalid &&
+                       (checkoutForm.get('payment')['controls'].creditCardName.dirty ||
+                       checkoutForm.get('payment')['controls'].creditCardName.touched)">
+                <span class="alert-text"
+                  *ngIf="checkoutForm.get('payment')['controls'].creditCardName.errors.required">Credit Card Name
+                  Required</span>
+              </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exp-date">Expiry Date</label>
+            <small>MM/YY</small>
+            <input type="text" class="form-control" id="exp-date" formControlName="expDate">
+            <div class="field-error">
+              <span *ngIf="checkoutForm.get('payment')['controls'].expDate.invalid &&
+                       (checkoutForm.get('payment')['controls'].expDate.dirty ||
+                       checkoutForm.get('payment')['controls'].expDate.touched)">
+                <span class="alert-text"
+                  *ngIf="checkoutForm.get('payment')['controls'].expDate.errors.required">Expiry Date Required</span>
+                <span class="alert-text" *ngIf="checkoutForm.get('payment')['controls'].expDate.errors.pattern">MM/YY Format Only</span>
+              </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="text" class="form-control" id="cvv" formControlName="cvv">
+            <div class="field-error">
+              <span *ngIf="checkoutForm.get('payment')['controls'].cvv.invalid &&
+                       (checkoutForm.get('payment')['controls'].cvv.dirty ||
+                       checkoutForm.get('payment')['controls'].cvv.touched)">
+                <span class="alert-text" *ngIf="checkoutForm.get('payment')['controls'].cvv.errors.required">CVV
+                  Number Required</span>
+                <span class="alert-text" *ngIf="checkoutForm.get('payment')['controls'].cvv.errors.pattern">Must
+                  Contain Numbers
+                  Only</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="order-summary">
+    <div class="order-summary-header">
+      <h3>Your Order</h3>
+    </div>
+    <div class="order-summary-content">
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th></th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let orderItem of orderItems">
+            <td>
+              <span>{{ orderItem.selectedItem.name }}</span>
+            </td>
+            <td>
+              <p>X {{ orderItem.itemQuantity }}</p>
+            </td>
+            <td>
+              <p>{{ orderItem.itemTotalPrice }} NIS</p>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>
+              Total:
+            </td>
+            <td>
+              <p>{{totalQuantity}}</p>
+            </td>
+            <td>
+              <p> {{totalPrice}} NIS</p>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-send" (click)="open()" type="submit" form="checkout-form"
+        [disabled]="checkoutForm.invalid || !orderItems.length">Confirm
+        Payment</button>
+    </div>
+  </div>
+</div>

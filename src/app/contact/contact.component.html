@@ -1,0 +1,87 @@
+<div class="header">
+  <h3>Contact Us</h3>
+</div>
+<div class="contact-container">
+  <div>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12095.283412135846!2d-74.00007976503541!3d40.72196006929109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259842ef645cd%3A0x26871ab5ef4bf7fa!2sBowery%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sil!4v1591043933825!5m2!1sen!2sil"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+      </iframe>
+    </div>
+  </div>
+  <div class="contact-options">
+    <h2>Get in Touch</h2>
+    <div class="contact">
+      <div class="contact-form">
+        <div *ngIf="sending">
+          <app-spinner></app-spinner>
+        </div>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" *ngIf="!sending && !submitted">
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" formControlName="name" placeholder="Full Name">
+            <div class="field-error">
+              <span *ngIf="contactForm.controls['name'].invalid && (contactForm.controls['name'].dirty || contactForm.controls['name'].touched)">
+                <span class="alert-text" *ngIf="contactForm.controls['name'].errors.required">Name is Required</span>
+              </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="tel" class="form-control" id="mobile" formControlName="mobile" placeholder="Phone Number">
+            <div class="field-error">
+              <span *ngIf="contactForm.controls['mobile'].invalid && (contactForm.controls['mobile'].dirty || contactForm.controls['mobile'].touched)">
+                <span class="alert-text" *ngIf="contactForm.controls['mobile'].errors.required">Phone Number is Required</span>
+                <span class="alert-text" *ngIf="contactForm.controls['mobile'].errors.pattern">Must Contain Numbers Only</span>
+              </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" formControlName="email" placeholder="Email">
+            <div class="field-error">
+              <span *ngIf="contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)">
+                <span class="alert-text" *ngIf="contactForm.controls['email'].errors.required">Email is Required</span>
+                <span class="alert-text" *ngIf="contactForm.controls['email'].errors.email">Invalid Email</span>
+              </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="message-content" rows="5" class="form-control" formControlName="messageContent" placeholder="Your Message - Up to 300 characters" maxlength="300"></textarea>
+            <div class="field-error">
+              <span *ngIf="contactForm.controls['messageContent'].invalid && (contactForm.controls['messageContent'].dirty || contactForm.controls['messageContent'].touched)">
+                <span class="alert-text" *ngIf="contactForm.controls['messageContent'].errors.required">Message is Required</span>
+              </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-send" type="submit" [disabled]="contactForm.invalid">Send</button>
+          </div>
+        </form>
+        <div *ngIf="!sending && submitted">
+          <h5>{{ submitStatus }}</h5>
+        </div>
+      </div>
+      <div class="options">
+        <div class="contact-info">
+          <span class="contact-icon"><i class="fas fa-home"></i></span>
+          <div class="contact-body">
+            <h4>Buttonwood, California.</h4>
+            <p>Rosemead, CA 91770</p>
+          </div>
+        </div>
+        <div class="contact-info">
+          <span class="contact-icon"><i class="fas fa-mobile"></i></span>
+          <div class="contact-body">
+            <h4>03-5552323</h4>
+            <p>Sun-Thu 09:00-21:00, Fri 09:00-16:00</p>
+          </div>
+        </div>
+        <div class="contact-info">
+          <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+          <div class="contact-body">
+            <h4>brunshtein.yael@gmail.com</h4>
+            <p>Send your questions anytime!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

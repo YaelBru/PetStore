@@ -1,0 +1,54 @@
+:host {
+  background-color: #f8f8f8;
+  color: #292929;
+}
+
+.info {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2e2e2e;
+}
+
+.link-icons {
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  width: 90%;
+}
+
+a {
+  margin: 20px;
+}
+
+i {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: #ff3500;
+  line-height: 45px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  transition: .5s;
+  border: 1px solid transparent;
+}
+
+i:hover {
+  background-color: #ffffff;
+  color: #ff3500;
+  border: 1px solid #ff3500;
+}
+
+p {
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Media Queries */
+@media all and (max-width: 706px) {
+  i {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+  }
+}
