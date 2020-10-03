@@ -30,9 +30,10 @@ App features include:
      - Payment available to authenticated users only
      - You can register or login - 
      
-     Email        | Password
-     ------------ | -------------
-     a@a.com      | 1111
+     
+         Email        | Password
+         ------------ | -------------
+         a@a.com      | 1111
 
 
 ## Tech and Frameworks
