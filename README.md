@@ -1,27 +1,46 @@
-# ArielasPetStore
+# Pet Store
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
+This app is the final project of the Technion Full Stack course.
+Live demo: https://yb-pet-store.herokuapp.com
 
-## Development server
+## Features
+Fully responsive web application.
+App features include:
+ 1. Contact options including a form built with ReactiveFormsModule
+ 2. Pets available for adoption with state management using NgRx
+ 3. Store Module - 
+   * State managed with NgRx
+   * Store items:
+     - List of items fetched from MongoDB Atlas database
+     - Pagination
+     - Filter items by categories 
+     - Search items list option
+   * Shopping carrt modal:
+     - Display the current number of items in the cart
+     - When opened - displaying the current items in the shopping cart
+     - Options to edit cart or continue to checkout 
+   * Shopping cart:
+     - List of the current items in the shopping cart
+     - Cart options include update item quantity, remove item, proceed to checkout
+   * User:
+     - User information
+     - View orders history
+   * Authentication:
+     - Clients need to register/login to make a purchase 
+     - Payment available to authenticated users only
+     - You can register or login - 
+     Email        | Password
+     ------------ | -------------
+     a@a.com      | 1111
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Tech and Frameworks
+  * Angular 8
+  * NgRx
+  * Node.js
+  * Express
+  * Mongoose
+  * MongoDB
+  * Angular Bootstrap 
+  * Angular Material
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
