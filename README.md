@@ -26,9 +26,9 @@ App features include:
        - User information
        - View orders history
      * Authentication:
-       - Clients need to register/login to make a purchase 
+       - Clients need to register/login to make a purchase
        - Payment available to authenticated users only
-       - You can register or login - 
+       - You can register or login -
      
      
            Email        | Password
