@@ -15,7 +15,7 @@ App features include:
        - Pagination
        - Filter items by categories 
        - Search items list option
-     * Shopping carrt modal:
+     * Shopping cart modal:
        - Display the current number of items in the cart
        - When opened - displaying the current items in the shopping cart
        - Options to edit cart or continue to checkout 
